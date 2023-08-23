@@ -143,10 +143,23 @@ create table attendance
 
 insert into course(course_id, title, dept_name, sks) values("123", "IOT", "DIKE", 3.0);
 insert into classroom(building, room_number, capacity) values("FMIPA", "R.305", 60);
-insert into instructor(instructor_id, name, dept_name) values("123", "Sri Mulyana phd", "DIKE");
+insert into instructor(instructor_id, name, dept_name) values("123", "tes phd", "DIKE");
 insert into section(course_id, sec_id, semester, year, building, room_number, day, start_hr, start_min, end_hr, end_min) values("123", "123", "Ganjil/3", 2023, "FMIPA", "R.305", "selasa", 9, 10, 12, 10);
 insert into teaches(instructor_id, course_id, sec_id, semester, year) values("123", "123","123",  "Ganjil/3", 2023);
 insert into student(nim, name, address, email) values("123", "lintangbirdasaputra", "pogung", "a@gmail.com");
 insert into takes(nim, course_id, sec_id, semester, year) values("123", "123", "123",  "Ganjil/3", 2023);
 insert into meeting(course_id, sec_id, semester, year, meeting_num, meeting_date, start_hour, end_hour, room ) values("123", "123", "Ganjil/3", 2023, "1", "2023-08-23", "2023-08-23 09:00:00", "2023-08-23 15:00:00", "R.305"  );
+
+-- insert new course and class
+insert into course(course_id, title, dept_name, sks) values("1", "KelasTes", "DIKE", 3.0);
+insert into section(course_id, sec_id, semester, year, building, room_number, day, start_hr, start_min, end_hr, end_min) values("1", "1", "Ganjil/3", 2023, "FMIPA", "R.305", "selasa", 15, 10, 24, 10);
+insert into meeting(course_id, sec_id, semester, year, meeting_num, meeting_date, start_hour, end_hour, room ) values("1", "1", "Ganjil/3", 2023, "2", "2023-08-23", "2023-08-23 15:00:00", "2023-08-23 23:59:00", "R.305"  );
+insert into takes(nim, course_id, sec_id, semester, year) values("123", "1", "1",  "Ganjil/3", 2023);
+insert into teaches(instructor_id, course_id, sec_id, semester, year) values("123", "1", "1",  "Ganjil/3", 2023);
+
+--  insert lecturer lintang . * one person must be an instructor or a student , not both
+-- insert into instructor(instructor_id, name, dept_name) values("2", "lintangbirdasaputra", "DIKE");
+-- insert into teaches(instructor_id, course_id, sec_id, semester, year) values("2", "1", "1",  "Ganjil/3", 2023);
+
+
 
