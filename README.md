@@ -64,14 +64,14 @@ press 'q' to quit
 
 
 ## ER Diagram
-![alt text](https://res.cloudinary.com/tutorial-lntng/image/upload/v1692775349/EERDIAGRAM2_phiefj.png)
+![alt text](https://res.cloudinary.com/tutorial-lntng/image/upload/v1692782219/ERDIAGRAMBENAR_rvgynu.png)
 
 
 ### To Do:
-1. Connect to mysql
+1. Connect to mysql **DONE**
 2. Tkinter GUI
 3. Raspberry Pi
-4. fix an error if face was not registered
+4. fix an error if face was not registered **DONE**
 
 
 ### Test
