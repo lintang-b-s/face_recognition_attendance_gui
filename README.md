@@ -64,7 +64,7 @@ press 'q' to quit
 
 
 ## ER Diagram
-![alt text](https://res.cloudinary.com/tutorial-lntng/image/upload/v1692772060/EERDIAGRAMSMARTCLASSROOM_li9pr0.png)
+![alt text](https://res.cloudinary.com/tutorial-lntng/image/upload/v1692775349/EERDIAGRAM2_phiefj.png)
 
 
 ### To Do:

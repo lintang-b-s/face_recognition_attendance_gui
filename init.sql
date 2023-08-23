@@ -69,7 +69,8 @@ create table teaches
   semester varchar(10),
   year numeric(4),
   primary key (instructor_id, course_id, sec_id, semester, year),
-  foreign key (course_id, sec_id, semester, year) references section(course_id, sec_id, semester, year) on delete cascade
+  foreign key (course_id, sec_id, semester, year) references section(course_id, sec_id, semester, year) on delete cascade,
+  foreign key (instructor_id) references instructor(instructor_id) on delete cascade
 
 );
 
@@ -91,8 +92,8 @@ create table takes
   semester varchar(10),
   year numeric(4,0),
   primary key (nim, course_id, sec_id, semester, year),
-  foreign key (course_id, sec_id, semester, year) references section(course_id, sec_id, semester, year) on delete cascade
-
+  foreign key (course_id, sec_id, semester, year) references section(course_id, sec_id, semester, year) on delete cascade,
+  foreign key (nim) references student(nim) on delete cascade
 );
 
 
